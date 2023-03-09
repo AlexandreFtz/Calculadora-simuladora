@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt">
     <!--Configuração do conteúdo-->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Calculadora de Juros Compostos </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- importando estilização -->
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <!-- Importando javascript -->
-    <script src='main.js'></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Calculadora de Juros Compostos </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- importando estilização -->
+        <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+        <!-- Importando javascript -->
+        <script src='main.js'></script>
+    </head>
     <!--Conteúdo-->
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li> home </li>
-                <li> Perfil Github - Alexandre Nascimento </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1> Calculadora de Juros Compostos </h1>
-        <section id="simulacao">
-            <h2> Simulador de Juros Compostos </h2>
-            <form>
-                <div>
-                    <label for="valor-inicial"> Valor inicial </label>
-                    <input type="number" id="valor-inicial"/>
-                </div>
-                <div>
-                    <label for="valor-mensal"> Valor mensal </label>
-                    <input type="number" id="valor-mensal"/>
-                </div>
-                <div>
-                    <label for="taxa-juros"> Taxa de Juros </label>
-                    <input type="number" id="taxa-juros"/>
-                </div>
-                <div>
-                    <label for="periodo"> Período </label>
-                    <input type="number" id="periodo"/>
-                </div>
-                <div>
-                    <input type="submit" value="Calcular"/>
-                    <button> Limpar </button>
-                </div>
-            </form>
-        </section>
-        <section id="resultado">
-            <h2> Resultado </h2>
-            <div>
-                <p> Valor Total Final </p>
-                <p> R$ 0,00 </p>
-            </div>
-            <div>
-                <p> Valor Total Investido </p>
-                <p> R$ 0,00 </p>
-            </div>
-            <div>
-                <p> Total em juros </p>
-                <p> R$ 0,00 </p>
-            </div>
-        </section>
-    </main>
-    <footer>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li> home </li>
+                    <li> <a target="_blank"
+                        href="https://github.com/AlexandreFtz">Perfil Github</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1> Calculadora de Juros Compostos </h1>
+            <section id="simulacao">
+                <h2> Simulador de Juros Compostos </h2>
+                <form>
+                    <div class="linha-form">
+                        <div id="input-form">
+                            <label for="valor-inicial"> Valor inicial </label>
+                            <input type="number" id="valor-inicial"/>
+                        </div>
+                        <div id="input-form">
+                            <label for="valor-mensal"> Valor mensal </label>
+                            <input type="number" id="valor-mensal"/>
+                        </div>
+                    </div>
 
-    </footer>
-</body>
+                    <div class="linha-form">
+                        <div id="input-form">
+                            <label for="taxa-juros"> Taxa de Juros </label>
+                            <input type="number" id="taxa-juros"/>
+                        </div>
+                        <div id="input-form">
+                            <label for="periodo"> Período </label>
+                            <input type="number" id="periodo"/>
+                        </div>
+                    </div>
+
+                    <div class="linha-form">
+                        <input class="btn-calcular" type="submit" 
+                        value="Calcular"/>
+                        <button class="limpar"> Limpar </button>
+                    </div>
+                </form>
+            </section>
+            <section id="resultado">
+                <div>
+                    <h2> Resultado </h2>
+                </div>
+                <div class="resultado-linha">
+                    <div class="total">
+                        <p class="titulo-total"> Valor Total Final </p>
+                        <p id="total-final"> R$ 0,00 </p>
+                    </div>
+                    <div class="total">
+                        <p class="titulo-total"> Valor Total Investido </p>
+                        <p id="total-investido"> R$ 0,00 </p>
+                    </div>
+                    <div class="total">
+                        <p class="titulo-total"> Total em juros </p>
+                        <p id="total-juros"> R$ 0,00 </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
 </html>

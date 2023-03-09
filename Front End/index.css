@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(31, 126, 70);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav{ 
+    width: 80%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li a{
+    color: black;
+    text-decoration: overline;
+    border: 2px solid #000000;
+    border-radius: 1px;
+}
+
+main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#simulacao {
+    background-color: rgb(211, 207, 207);
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 300px;
+    padding: 2%;
+    margin-bottom: 20px;
+}
+
+#simulacao h2 {
+    color: rgb(45, 45, 133);
+    margin: 20px;
+}
+
+.linha-form {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.linha-form label {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(36, 35, 35);
+
+}
+
+#input-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#input-form input {
+    width: 80%;
+    height: 26px;
+    border: 1px solid #a3a3a3;
+    border-radius: 6px;
+}
+
+.input-form input:focus {
+    outline: none !important;
+    border-color: rgb(101, 101, 202);
+    box-shadow: 0 0 1px rgb(101, 101, 202);
+}
+
+.btn-calcular {
+    width: 140px;
+    height: 35px;
+    background-color: #0077bd;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+
+}
+
+#resultado {
+    background-color: rgb(211, 207, 207);
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 200px;
+    padding: 2%;
+}
+
+#resultado h2 {
+    color: rgb(45, 45, 133);
+    margin: 20px;
+}
+
+.resultado-linha {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.total {
+    background-color: white;
+    width: 29%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.titulo-total {
+    color: rgb(85, 82, 82);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#total-final {
+    color: rgb(85, 82, 82);
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+#total-investido {
+    color: rgb(64, 64, 156);
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+#total-juros {
+    color: rgb(75, 156, 64);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
